@@ -129,3 +129,15 @@ img{max-width:100%;display:block}
   .metric-card,.info-card,.benefit-card,.step-card,.contact-shell,.contact-form-wrap,.system-card{border-radius:22px}
   .contact-shell{padding:18px}
 }
+
+.contact-copy a,
+.section-head a{
+  color:#0f5670;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.contact-copy a:hover,
+.section-head a:hover{
+  text-decoration:underline;
+}

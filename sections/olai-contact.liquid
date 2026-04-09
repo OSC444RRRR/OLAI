@@ -1,21 +1,23 @@
-<section class="simple-contact-page">
-  <div class="container simple-contact-box">
-    <div class="section-head">
+<section class="simple-contact-page premium-v2">
+  <div class="container compact-contact-box">
+    <div class="section-head reveal visible-now">
       <span class="section-kicker">Contacto</span>
       <h1>Hablemos de tu proyecto</h1>
-      <p>Compártenos qué proceso deseas optimizar o qué página web necesitas.</p>
+      <p>Compártenos qué quieres optimizar y te responderemos con una propuesta clara. También puedes escribirnos a <a href="mailto:olai.digital.mx@gmail.com">olai.digital.mx@gmail.com</a>.</p>
     </div>
-    {% form 'contact', class: 'contact-form' %}
-      <div class="field-row">
-        <input type="text" name="contact[name]" placeholder="Nombre" required>
-        <input type="email" name="contact[email]" placeholder="Correo" required>
-      </div>
-      <input type="text" name="contact[company]" placeholder="Empresa">
-      <textarea name="contact[body]" placeholder="Describe tu proyecto" required></textarea>
-      <button type="submit" class="btn btn-primary full">Enviar</button>
-      {% if form.posted_successfully? %}<p class="form-message success">Gracias, recibimos tu mensaje.</p>{% endif %}
-      {% if form.errors %}<p class="form-message error">Revisa los datos e inténtalo de nuevo.</p>{% endif %}
-    {% endform %}
+    <div class="contact-form-wrap reveal delay-1 visible-now">
+      {% form 'contact', class: 'contact-form' %}
+        <div class="field-row">
+          <input type="text" name="contact[name]" placeholder="Nombre" required>
+          <input type="email" name="contact[email]" placeholder="Correo" required>
+        </div>
+        <input type="text" name="contact[company]" placeholder="Empresa">
+        <textarea name="contact[body]" placeholder="Describe tu proyecto" required></textarea>
+        <button type="submit" class="btn btn-primary full">Enviar</button>
+        {% if form.posted_successfully? %}<p class="form-message success">Gracias, recibimos tu mensaje.</p>{% endif %}
+        {% if form.errors %}<p class="form-message error">Revisa los datos e inténtalo de nuevo.</p>{% endif %}
+      {% endform %}
+    </div>
   </div>
 </section>
 
