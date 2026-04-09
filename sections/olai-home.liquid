@@ -1,178 +1,196 @@
-<section class="olai-site premium-v2">
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
-  <div class="grid-overlay"></div>
+<section class="olai-site">
+  <div class="bg-blur bg-blur-a"></div>
+  <div class="bg-blur bg-blur-b"></div>
 
   <header class="site-header">
-    <div class="container nav-shell">
-      <a href="{{ routes.root_url }}" class="brand" aria-label="OLAI">
-        <img src="{{ 'olai.jpg' | asset_url }}" alt="Logo OLAI" class="brand-image" width="150" height="150" loading="eager">
-        <span class="brand-copy sr-only">OLAI Automatización Inteligente</span>
+    <div class="container header-shell">
+      <a href="{{ routes.root_url }}" class="brand" aria-label="OLAI inicio">
+        <img src="{{ 'olai.jpg' | asset_url }}" alt="Logo OLAI" class="brand-logo" width="56" height="56">
+        <div class="brand-text">
+          <strong>OLAI</strong>
+          <span>Automatización Inteligente</span>
+        </div>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" data-menu-toggle>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
+
       <nav class="main-nav" data-menu>
         <a href="#servicios">Servicios</a>
         <a href="#ventajas">Ventajas</a>
         <a href="#proceso">Proceso</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <div class="nav-cta desktop-only">
-        <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
-      </div>
+
+      <a href="#contacto" class="btn btn-primary desktop-cta">Solicitar propuesta</a>
     </div>
   </header>
 
-  <section class="hero section-first">
-    <div class="container hero-layout">
-      <div class="hero-copy reveal visible-now">
-        <span class="eyebrow">Automatización, IA y desarrollo web premium</span>
-        <h1>Diseñamos sistemas digitales que hacen que tu empresa opere mejor y se vea al nivel de su servicio.</h1>
-        <p class="lead">En OLAI desarrollamos soluciones de automatización con inteligencia artificial, integraciones y páginas web personalizadas para empresas que quieren reducir fricción, mejorar seguimiento y crecer con una estructura digital más sólida.</p>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal visible">
+        <h1>Hacemos que tu empresa opere mejor y proyecte una imagen más profesional.</h1>
+        <p class="hero-text"><h2>En OLAI desarrollamos soluciones de automatización con inteligencia artificial, integraciones y páginas web personalizadas para empresas que quieren reducir fricción, mejorar seguimiento y crecer con una estructura digital más sólida.<h2></p>
+
         <div class="hero-actions">
           <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
           <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
         </div>
-        <div class="mini-proof">
+
+        <div class="hero-tags">
           <span>Optimización operativa</span>
           <span>Automatización con IA</span>
           <span>Web personalizada</span>
         </div>
       </div>
 
-      <div class="hero-panel reveal delay-2">
-        <div class="showcase-card">
-          <div class="showcase-top">
-            <span class="badge-soft">Arquitectura OLAI</span>
-            <span class="badge-line">Premium workflow</span>
-          </div>
+      <div class="hero-card reveal delay-1 visible">
+        <div class="panel-card">
+          <span class="panel-label">Arquitectura OLAI</span>
           <h2>De procesos dispersos a una operación más clara, conectada y escalable.</h2>
-          <div class="showcase-list">
+
+          <div class="panel-steps">
             <article>
-              <strong>Diagnóstico del negocio</strong>
+              <strong>Diagnóstico</strong>
               <p>Identificamos cuellos de botella, retrabajos, tareas manuales y oportunidades reales de optimización.</p>
             </article>
             <article>
-              <strong>Diseño de solución</strong>
-              <p>Definimos la lógica, automatización, IA, integración y experiencia web que necesita tu empresa.</p>
+              <strong>Diseño</strong>
+              <p>Definimos automatización, integración, IA y experiencia web según la necesidad del negocio.</p>
             </article>
             <article>
-              <strong>Implementación a medida</strong>
-              <p>Construimos una solución adaptada al cliente, no una plantilla genérica disfrazada.</p>
+              <strong>Implementación</strong>
+              <p>Construimos una solución adaptada al cliente, con foco en utilidad, orden y presentación.</p>
             </article>
-          </div>
-          <div class="stats-strip">
-            <div><span>Enfoque</span><strong>Empresarial</strong></div>
-            <div><span>Estilo</span><strong>Premium</strong></div>
-            <div><span>Modelo</span><strong>A medida</strong></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="trust-band">
-    <div class="container trust-shell reveal">
-      <p>OLAI ayuda a empresas que necesitan optimizar procesos, mejorar su presencia digital y conectar herramientas con una solución más profesional.</p>
-    </div>
-  </section>
-
-  <section id="servicios" class="section">
+  <section class="section compact-top" id="servicios">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="section-kicker">Servicios</span>
-        <h2>Una oferta clara para empresas que necesitan estructura, automatización y mejor presencia digital.</h2>
-        <p>Nuestro enfoque combina operación, tecnología y diseño para construir soluciones funcionales y visualmente sólidas.</p>
+      <div class="section-heading reveal">
+        <span class="section-label">Servicios</span>
+        <h2>Soluciones digitales pensadas para negocio, operación y crecimiento.</h2>
+        <p>No trabajamos con soluciones genéricas. Diseñamos una estructura digital alineada al servicio, al proceso y al objetivo comercial del cliente.</p>
       </div>
-      <div class="services-grid">
-        <article class="service-card reveal">
+
+      <div class="cards-grid two-col">
+        <article class="info-card reveal">
           <small>01</small>
           <h3>Optimización con IA</h3>
-          <p>Automatizamos clasificación, seguimiento, respuestas, validaciones y tareas repetitivas con lógica útil para la empresa.</p>
+          <p>Automatizamos tareas, clasificación, seguimiento y procesos repetitivos para reducir carga operativa.</p>
         </article>
-        <article class="service-card reveal delay-1">
+        <article class="info-card reveal delay-1">
           <small>02</small>
           <h3>Automatización operativa</h3>
-          <p>Conectamos procesos internos para reducir fricción, mejorar tiempos y tener una operación más ordenada.</p>
+          <p>Conectamos procesos y herramientas para que la operación sea más fluida, ordenada y medible.</p>
         </article>
-        <article class="service-card reveal delay-2">
+        <article class="info-card reveal delay-2">
           <small>03</small>
           <h3>Páginas web personalizadas</h3>
-          <p>Diseñamos landings y sitios web adaptados al servicio, marca, objetivo comercial y perfil del cliente.</p>
+          <p>Diseñamos páginas premium adaptadas al servicio, a la marca y a la percepción que quieres proyectar.</p>
         </article>
-        <article class="service-card reveal delay-3">
+        <article class="info-card reveal delay-3">
           <small>04</small>
           <h3>Integraciones</h3>
-          <p>Conectamos formularios, CRM, correo, dashboards, bases de datos y herramientas clave para que el flujo sí funcione.</p>
+          <p>Conectamos formularios, correo, CRM, dashboards y otros sistemas para crear flujos reales de trabajo.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="ventajas" class="section section-alt">
-    <div class="container split-block">
-      <div class="section-head reveal">
-        <span class="section-kicker">Ventajas</span>
-        <h2>No solo desarrollamos páginas o automatizaciones: diseñamos sistemas más útiles para crecer.</h2>
+  <section class="section section-soft" id="ventajas">
+    <div class="container">
+      <div class="section-heading reveal center">
+        <span class="section-label">Ventajas</span>
+        <h2>Diseño, operación y tecnología trabajando juntos.</h2>
       </div>
-      <div class="advantages-grid">
-        <article class="adv-card reveal"><strong>Menos trabajo manual</strong><p>Reducción de tareas repetitivas y seguimiento más consistente.</p></article>
-        <article class="adv-card reveal delay-1"><strong>Más claridad operativa</strong><p>Procesos conectados, información centralizada y mejor control interno.</p></article>
-        <article class="adv-card reveal delay-2"><strong>Mejor percepción digital</strong><p>Una web premium mejora confianza, posicionamiento y presentación comercial.</p></article>
-        <article class="adv-card reveal delay-3"><strong>Solución adaptada</strong><p>Cada proyecto responde al negocio real del cliente y no a una plantilla genérica.</p></article>
+
+      <div class="cards-grid two-col advantages-grid">
+        <article class="soft-card reveal">
+          <h3>Menos trabajo manual</h3>
+          <p>Reducimos fricción operativa y tareas repetitivas.</p>
+        </article>
+        <article class="soft-card reveal delay-1">
+          <h3>Más claridad interna</h3>
+          <p>Procesos conectados, mejor seguimiento y más control.</p>
+        </article>
+        <article class="soft-card reveal delay-2">
+          <h3>Mejor presencia digital</h3>
+          <p>Una web premium mejora percepción, confianza y comunicación.</p>
+        </article>
+        <article class="soft-card reveal delay-3">
+          <h3>Solución adaptada</h3>
+          <p>Cada propuesta se diseña según el contexto real del cliente.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="proceso" class="section">
+  <section class="section" id="proceso">
     <div class="container">
-      <div class="section-head reveal center-head">
-        <span class="section-kicker">Proceso</span>
-        <h2>Así construimos una solución premium</h2>
+      <div class="section-heading reveal center">
+        <span class="section-label">Proceso</span>
+        <h2>Cómo trabajamos en OLAI</h2>
       </div>
+
       <div class="process-grid">
-        <article class="process-card reveal"><span>1</span><h3>Escuchamos</h3><p>Entendemos la operación, objetivos, retos y contexto del cliente.</p></article>
-        <article class="process-card reveal delay-1"><span>2</span><h3>Diagnosticamos</h3><p>Detectamos dónde hay fricción, pérdida de tiempo y oportunidades de mejora.</p></article>
-        <article class="process-card reveal delay-2"><span>3</span><h3>Diseñamos</h3><p>Definimos automatización, IA, integraciones y experiencia visual.</p></article>
-        <article class="process-card reveal delay-3"><span>4</span><h3>Implementamos</h3><p>Construimos una solución clara, funcional y lista para crecer.</p></article>
+        <article class="process-card reveal">
+          <span>1</span>
+          <h3>Escuchamos</h3>
+          <p>Entendemos la empresa, el reto y el objetivo.</p>
+        </article>
+        <article class="process-card reveal delay-1">
+          <span>2</span>
+          <h3>Diagnosticamos</h3>
+          <p>Detectamos fricción, desorden y oportunidades reales.</p>
+        </article>
+        <article class="process-card reveal delay-2">
+          <span>3</span>
+          <h3>Diseñamos</h3>
+          <p>Definimos solución, arquitectura y experiencia.</p>
+        </article>
+        <article class="process-card reveal delay-3">
+          <span>4</span>
+          <h3>Implementamos</h3>
+          <p>Construimos una solución clara, útil y profesional.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container">
-      <div class="testimonial-card reveal">
-        <span class="section-kicker">Enfoque OLAI</span>
-        <blockquote>Trabajamos para que la tecnología no solo se vea bien, sino que también ayude a operar mejor, vender mejor y comunicar mejor el valor del negocio.</blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="section section-contact">
-    <div class="container contact-shell reveal visible-now">
+  <section class="section section-contact" id="contacto">
+    <div class="container contact-shell reveal visible">
       <div class="contact-copy">
-        <span class="section-kicker dark">Contacto</span>
-        <h2>Cuéntanos qué necesitas optimizar</h2>
-        <p>Si tu empresa necesita automatización con IA, integración de procesos o una página web premium adaptada a tu servicio, podemos diseñar una propuesta a la medida.</p>
-        <ul class="contact-points" role="list">
-          <li>Automatización con IA para operación y seguimiento.</li>
-          <li>Páginas web personalizadas para servicios y negocios.</li>
-          <li>Integración de herramientas y procesos empresariales.</li>
-          <li>Correo directo: <a href="mailto:olai.digital.mx@gmail.com">olai.digital.mx@gmail.com</a></li>
+        <span class="section-label dark">Contacto</span>
+        <h2>Cuéntanos qué quieres optimizar</h2>
+        <p>Si tu empresa necesita automatización con IA, integración de procesos o una página web premium adaptada a su servicio, podemos ayudarte.</p>
+        <ul class="contact-list" role="list">
+          <li>Automatización con IA.</li>
+          <li>Integración de herramientas.</li>
+          <li>Páginas web personalizadas.</li>
+          <li>Correo: <a href="mailto:olai.digital.mx@gmail.com">olai.digital.mx@gmail.com</a></li>
         </ul>
       </div>
-      <div class="contact-form-wrap">
+
+      <div class="contact-form-box">
         {% form 'contact', class: 'contact-form' %}
           <div class="field-row">
             <input type="text" name="contact[name]" placeholder="Nombre" required>
             <input type="email" name="contact[email]" placeholder="Correo" required>
           </div>
           <input type="text" name="contact[company]" placeholder="Empresa">
-          <textarea name="contact[body]" placeholder="Cuéntanos qué servicio o solución necesitas" required></textarea>
+          <textarea name="contact[body]" placeholder="Cuéntanos qué necesitas" required></textarea>
           <button type="submit" class="btn btn-dark full">Enviar solicitud</button>
-          {% if form.posted_successfully? %}<p class="form-message success">Gracias, recibimos tu mensaje.</p>{% endif %}
-          {% if form.errors %}<p class="form-message error">Revisa los datos e inténtalo de nuevo.</p>{% endif %}
+          {% if form.posted_successfully? %}
+            <p class="form-message success">Gracias, recibimos tu mensaje.</p>
+          {% endif %}
+          {% if form.errors %}
+            <p class="form-message error">Revisa los datos e inténtalo de nuevo.</p>
+          {% endif %}
         {% endform %}
       </div>
     </div>
@@ -183,6 +201,8 @@
 {
   "name": "OLAI home",
   "settings": [],
-  "presets": [{ "name": "OLAI home" }]
+  "presets": [
+    { "name": "OLAI home" }
+  ]
 }
 {% endschema %}
